@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+    <div class="header">
+        <a href="index.html" class="logo">NOW É CERRADO!</a>
+        <div class="header-right">
+            <a href="home.html">Inicio</a>
+            <a href="evento.html">O Evento</a>
+            <a href="atracoes.html">Line Up</a>
+            <a class="active" href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+    </div>
+</header>
+    <div style="padding-left:20px">
+            <br><br>
+            <img src="img/logo1.png">         
+    </div>
+
+    <main role="main" class="container text-center mt-3 mb-3">
+        <form class="form-group" method="POST" id="contato">
+            <!--<form action="cadastro.php" method="post" enctype="multipart/form-data">-->
+            <h1>Fale Conosco</h1>
+            <br>
+            <fieldset>
+                <input class="form-control" type="text" placeholder="nome" minlength="7" maxlength="60" id="nome" name="nome" required/>
+
+                <span id="erroNome"></span>
+                <input class="form-control mt-2" type="text" placeholder="email" id="email" name="email" required />
+
+                <span id="erroEmail"></span>
+
+                <select class="form-control mt-2" name="assunto" id="assunto">
+                    <option selected value="">Selecione</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                    <option value="sugestão">Sugestões</option>
+                    <option value="elogio">Elogios</option>
+                </select>
+
+                <span id="erroAssunto"></span>
+                <textarea class="form-control mt-2" cols="50" rows="10" name="msg" id="msg" required></textarea>
+
+                <span id="erroMsg"></span>
+                <input class="btn btn-success mt-2" type="submit" value="Cadastrar" />
+                <input class="btn btn-danger mt-2" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+
+    </main>
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
